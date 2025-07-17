@@ -1,0 +1,51 @@
+{
+    "name": "BRR_assets",
+    "description": "",
+    "dependencies": {
+        "device": "*"
+    },
+    "files": [
+        "main.blocks",
+        "main.ts",
+        "README.md",
+        "assets.json",
+        "tilemap.g.jres",
+        "tilemap.g.ts",
+        "images.g.jres",
+        "images.g.ts"
+    ],
+    "testFiles": [
+        "test.ts"
+    ],
+    "targetVersions": {
+        "branch": "v1.12.35",
+        "tag": "v1.12.35",
+        "commits": "https://github.com/microsoft/pxt-arcade/commits/f8f5efedd1040f22c4c3f512c3de683ef8cde8cd",
+        "target": "2.0.56",
+        "pxt": "8.5.48",
+        "targetId": "arcade"
+    },
+    "supportedTargets": [
+        "arcade"
+    ],
+    "preferredEditor": "tsprj",
+    "assetPack": true,
+    "palette": [
+        "#000000",
+        "#FBF8EF",
+        "#FF7575",
+        "#E15166",
+        "#FFD561",
+        "#FBAB60",
+        "#55EC97",
+        "#31C9B7",
+        "#5D92EE",
+        "#466CDD",
+        "#B86CE5",
+        "#9C51C8",
+        "#EBDAC2",
+        "#D0A990",
+        "#A2645D",
+        "#470D4E"
+    ]
+}
