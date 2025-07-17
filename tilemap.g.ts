@@ -41,56 +41,6 @@ namespace myTiles {
     //% fixedInstance jres blockIdentity=images._tile
     export const tile10 = image.ofBuffer(hex``);
 
-    helpers._registerFactory("tilemap", function(name: string) {
-        switch(helpers.stringTrim(name)) {
-            case "Beach_0":
-            case "Beach_1":return tiles.createTilemap(hex`100008000404040404040404040404040404040405020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202020202060202020202020202030303030303030303030303030303030101010101010101010101010101010101010101010101010101010101010101`, img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile4,myTiles.tile5,myTiles.tile7,myTiles.tile3], TileScale.Sixteen);
-            case "level":
-            case "level1":return tiles.createTilemap(hex`0a00080004040404040404040404030101010101010101010101010701070701010101070606060606060101010505050505050505070505050505050c0c0c0505080505050a0909090909090909090b02020202`, img`
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . . . . . 
-. . . . . . 2 2 2 2 
-2 2 2 2 2 2 2 2 2 2 
-`, [myTiles.transparency16,myTiles.tile2,myTiles.tile4,myTiles.tile7,myTiles.tile5,myTiles.tile8,myTiles.tile9,myTiles.tile10,myTiles.tile12,myTiles.tile13,myTiles.tile14,myTiles.tile15,myTiles.tile16], TileScale.Sixteen);
-            case "Dock_0":
-            case "Beach_2":return tiles.createTilemap(hex`100008000404040404040404040404040404040405020202020202020202020202020206080202020202020202020202080608070303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030303030301010101010101010101010101010101`, img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile4,myTiles.tile5,myTiles.tile7,myTiles.tile3,myTiles.tile8,myTiles.tile10], TileScale.Sixteen);
-            case "Farm_0":
-            case "level2":return tiles.createTilemap(hex`1000080004040404040404040404040404040404050202020202020202020202020202020a020202020202020202020202020a06080a02020202020202020a060208080703030303030303030303030303030303010101010101010101010101010101010101010101010101010101010101010109090909090909090909090909090909`, img`
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-. . . . . . . . . . . . . . . . 
-`, [myTiles.transparency16,myTiles.tile1,myTiles.tile2,myTiles.tile4,myTiles.tile5,myTiles.tile7,myTiles.tile3,myTiles.tile8,myTiles.tile9,myTiles.tile6,myTiles.tile10], TileScale.Sixteen);
-        }
-        return null;
-    })
-
     helpers._registerFactory("tile", function(name: string) {
         switch(helpers.stringTrim(name)) {
             case "transparency16":return transparency16;
